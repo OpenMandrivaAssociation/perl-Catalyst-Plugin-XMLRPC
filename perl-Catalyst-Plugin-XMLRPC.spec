@@ -17,6 +17,7 @@ Buildrequires:	perl-devel
 BuildRequires:	perl(Catalyst) >= 5.64
 BuildRequires:	perl(RPC::XML)
 BuildArch:	noarch
+Buildroot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This plugin allows your controller class to dispatch XMLRPC methods
