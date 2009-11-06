@@ -14,7 +14,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Catalyst/%{upstream_name}
 %if %{mdkversion} < 1010
 Buildrequires:	perl-devel
 %endif
-BuildRequires:	perl(Catalyst) >= 5.64
+BuildRequires:	perl(Catalyst)
 BuildRequires:	perl(RPC::XML)
 
 BuildArch:	noarch
