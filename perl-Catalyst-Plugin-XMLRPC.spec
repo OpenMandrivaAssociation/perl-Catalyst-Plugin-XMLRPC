@@ -15,6 +15,7 @@ Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/Catalyst/%{upstream_name}
 Buildrequires:	perl-devel
 %endif
 BuildRequires:	perl(Catalyst)
+BuildRequires:	perl(Class::Data::Inheritable)
 BuildRequires:	perl(RPC::XML)
 
 BuildArch:	noarch
