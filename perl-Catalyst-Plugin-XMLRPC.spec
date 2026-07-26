@@ -1,15 +1,13 @@
 %define upstream_name	 Catalyst-Plugin-XMLRPC
-%define upstream_version 2.01
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	2.01
+Release:	7
 
 Summary:	Dispatch XMLRPC methods with Catalyst
 License:	Artistic/GPL
 Group:		Development/Perl
 Url:		https://dev.catalyst.perl.org/repos/Catalyst/trunk/historical/Catalyst-Plugin-XMLRPC
-Source0:	https://cpan.metacpan.org/authors/id/M/MR/MRAMBERG/Catalyst-Plugin-XMLRPC-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/M/MR/MRAMBERG/Catalyst-Plugin-XMLRPC-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -24,7 +22,7 @@ This plugin allows your controller class to dispatch XMLRPC methods
 from its own class.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
